@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('font/Brandon_reg.otf') format('otf'),
+  url('font/Brandon_reg_it.otf') format('otf'),
+  url('font/Brandon_thin_it.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('font/Brandon_bld.otf') format('otf'),
+  url('font/Brandon_bld_it.otf') format('otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+body {
+  font-family: 'CustomFont', sans-serif;
+  background-color: #121212; /* Dark background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: #ffffff; /* White text color */
+}
+
+.container {
+  filter: drop-shadow(4px -4px 4px rgba(112, 239, 231, 0.30));
+  will-change: filter;
+
+  text-align: center;
+}
+
+.container:hover {
+  filter: drop-shadow(8px -8px 10px rgba(112, 239, 231, 0.30));
+}
+
+.logo {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #121212; /* Darker card background color */
+  padding: 20px;
+  border-radius: 20px;
+  /*box-shadow: 0px 0px 20px rgba(112, 239, 231, 0.30); !* Animated shadow *!*/
+  clip-path: polygon(14.727% 99.202%, 15.984% 99.202%, 15.984% 99.202%, 15.985% 99.202%, 15.985% 99.202%, 15.985% 99.202%, 15.985% 99.202%, 15.986% 99.202%, 15.986% 99.202%, 15.986% 99.202%, 15.987% 99.202%, 15.987% 99.202%, 15.987% 99.202%, 92.49% 99.202%, 92.49% 99.202%, 93.35% 99.081%, 94.165% 98.731%, 94.925% 98.172%, 95.619% 97.422%, 96.236% 96.5%, 96.766% 95.425%, 97.196% 94.216%, 97.518% 92.892%, 97.718% 91.473%, 97.788% 89.977%, 97.788% 30.767%, 97.788% 30.767%, 97.773% 30.093%, 97.731% 29.426%, 97.662% 28.769%, 97.566% 28.124%, 97.443% 27.493%, 97.295% 26.88%, 97.121% 26.286%, 96.923% 25.714%, 96.7% 25.167%, 96.454% 24.646%, 91.8% 15.506%, 87.475% 6.973%, 87.475% 6.973%, 87.16% 6.403%, 86.822% 5.886%, 86.461% 5.424%, 86.08% 5.017%, 85.682% 4.668%, 85.268% 4.379%, 84.841% 4.151%, 84.403% 3.986%, 83.956% 3.886%, 83.503% 3.852%, 5.74% 3.852%, 5.74% 3.852%, 4.881% 3.973%, 4.066% 4.322%, 3.306% 4.882%, 2.611% 5.632%, 1.994% 6.554%, 1.465% 7.629%, 1.034% 8.838%, 0.713% 10.161%, 0.512% 11.581%, 0.442% 13.077%, 0.442% 72.287%, 0.442% 72.287%, 0.457% 72.961%, 0.499% 73.628%, 0.568% 74.285%, 0.664% 74.93%, 0.787% 75.56%, 0.936% 76.174%, 1.109% 76.767%, 1.308% 77.339%, 1.53% 77.887%, 1.776% 78.407%, 6.43% 87.548%, 10.755% 96.081%, 10.755% 96.081%, 11.07% 96.65%, 11.408% 97.167%, 11.769% 97.63%, 12.15% 98.037%, 12.548% 98.385%, 12.962% 98.675%, 13.389% 98.903%, 13.827% 99.068%, 14.274% 99.168%, 14.727% 99.202%);
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown-item {
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+/* Add custom animations */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.shadow {
+  animation-name: shadowPulse;
+}
+
+
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0px 0px 20px rgb(255, 0, 0);
+  }
+  50% {
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  }
+}
